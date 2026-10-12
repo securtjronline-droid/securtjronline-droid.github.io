@@ -67,17 +67,17 @@ export const resources = [
       {
         name: 'SEC EDGAR',
         url: 'https://www.sec.gov/edgar/search/',
-        text: 'Search public company filings.',
+        text: 'The SEC’s free database of public company filings, including annual reports (10-K), quarterly reports (10-Q), and current event reports (8-K).',
       },
       {
         name: 'Investor.gov',
         url: 'https://www.investor.gov/',
-        text: 'Investor education from the U.S. SEC.',
+        text: 'The SEC’s investor education site, with guides to investing basics, financial calculators, and tips for avoiding investment fraud.',
       },
       {
         name: 'FINRA BrokerCheck',
         url: 'https://brokercheck.finra.org/',
-        text: 'Look up brokers and investment firms.',
+        text: 'A free FINRA tool for checking the background, registration, and disciplinary history of brokers and investment firms.',
       },
     ],
   },
@@ -87,17 +87,17 @@ export const resources = [
       {
         name: 'ClinicalTrials.gov',
         url: 'https://clinicaltrials.gov/',
-        text: 'Registry of clinical studies around the world.',
+        text: 'A U.S. National Library of Medicine database of clinical studies worldwide, showing each study’s status, locations, and posted results.',
       },
       {
         name: 'FDA Press Announcements',
         url: 'https://www.fda.gov/news-events/fda-newsroom/press-announcements',
-        text: 'Official FDA news and approvals.',
+        text: 'Official FDA news releases on drug and medical device approvals, safety communications, and other regulatory actions.',
       },
       {
         name: 'NIH News Releases',
         url: 'https://www.nih.gov/news-events/news-releases',
-        text: 'Research news from the National Institutes of Health.',
+        text: 'Announcements of new research findings and initiatives from the National Institutes of Health and its institutes.',
       },
     ],
   },
