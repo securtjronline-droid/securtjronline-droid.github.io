@@ -1,0 +1,472 @@
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--green);
+  color: var(--navy-900);
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  color: var(--navy-900);
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 22, 40, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 8px;
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-list a:hover {
+  background: var(--navy-700);
+  color: var(--green);
+}
+
+main:focus {
+  outline: none;
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 0 5rem;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(52, 211, 153, 0.14), transparent 45%),
+    linear-gradient(180deg, var(--navy-800), var(--navy-900));
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.75rem);
+  letter-spacing: -0.02em;
+  max-width: 18ch;
+}
+
+.accent {
+  color: var(--green);
+}
+
+.lead {
+  font-size: 1.2rem;
+  max-width: 55ch;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--navy-900);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: var(--green-strong);
+  color: var(--navy-900);
+}
+
+/* Sections */
+.section {
+  padding: 4.5rem 0;
+}
+
+.section.alt {
+  background: var(--navy-800);
+  border-block: 1px solid var(--border);
+}
+
+.section h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--green);
+}
+
+.section-intro {
+  max-width: 60ch;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.card {
+  background: var(--navy-700);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.card-grid .card:hover {
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag-list li {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 0.9rem;
+}
+
+.card-link {
+  margin: 0;
+}
+
+/* Notice */
+.notice {
+  margin: 2rem 0 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--green);
+  background: var(--navy-700);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-h);
+}
+
+/* Resources */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.resource-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.resource-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-list a {
+  font-weight: 600;
+}
+
+.resource-list span {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0 0 0.25rem;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* DNA helix hero animation (decorative) */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.dna-art {
+  position: absolute;
+  top: 50%;
+  right: max(1.25rem, calc((100% - 1100px) / 2 + 1.25rem));
+  width: min(400px, 38%);
+  height: 95%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dna-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+}
+
+.dna-candles {
+  animation: dna-scroll 40s linear infinite;
+}
+
+.dna-candles line {
+  stroke-width: 1.2;
+}
+
+.dna-candle-up rect {
+  fill: var(--green);
+  opacity: 0.4;
+}
+
+.dna-candle-up line {
+  stroke: var(--green);
+  opacity: 0.45;
+}
+
+.dna-candle-down rect {
+  fill: var(--navy-600);
+  stroke: var(--text-muted);
+  stroke-width: 1;
+  opacity: 0.5;
+}
+
+.dna-candle-down line {
+  stroke: var(--text-muted);
+  opacity: 0.35;
+}
+
+.dna-trend {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  opacity: 0.3;
+}
+
+.dna-particle {
+  fill: var(--text-h);
+  opacity: 0.15;
+  animation: dna-twinkle 4s ease-in-out infinite alternate;
+}
+
+.dna-helix {
+  animation: dna-turn 10s linear infinite;
+}
+
+.dna-helix path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dna-strand-back {
+  stroke: var(--green-strong);
+  stroke-width: 7;
+  opacity: 0.3;
+}
+
+.dna-rung-a,
+.dna-rung-b {
+  stroke-width: 3.5;
+  opacity: 0.55;
+}
+
+.dna-rung-a {
+  stroke: var(--green);
+}
+
+.dna-rung-b {
+  stroke: var(--text-muted);
+}
+
+.dna-strand-glow {
+  stroke: var(--green);
+  stroke-width: 20;
+  opacity: 0.12;
+}
+
+.dna-strand {
+  stroke: var(--green);
+  stroke-width: 10;
+  opacity: 0.9;
+}
+
+.dna-strand-texture {
+  stroke: var(--navy-900);
+  stroke-width: 2;
+  stroke-dasharray: 0.1 5;
+  opacity: 0.35;
+}
+
+.dna-strand-highlight {
+  stroke: var(--text-h);
+  stroke-width: 2.5;
+  opacity: 0.45;
+  transform: translateY(-2px);
+}
+
+@keyframes dna-turn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+
+@keyframes dna-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-448px);
+  }
+}
+
+@keyframes dna-twinkle {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dna-art {
+    opacity: 0.45;
+  }
+}
+
+@media (max-width: 760px) {
+  .dna-art {
+    width: 70%;
+    right: 0;
+    opacity: 0.22;
+  }
+}
